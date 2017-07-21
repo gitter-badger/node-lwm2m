@@ -35,7 +35,7 @@ server.on('register', function(params, accept) {
     server
     .read(params.ep, '3/0')
     .then(function(device) {
-      console.log(JSON.stringify(device, null, 4));
+      console.dir(device);
     })
   });
   accept();
